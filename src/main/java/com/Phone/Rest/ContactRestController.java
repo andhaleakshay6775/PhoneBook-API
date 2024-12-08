@@ -29,7 +29,7 @@ public String saveContact( @RequestBody ContactForm form) {
 		return service.viewContacts();
 	}
 	
-	@GetMapping("/edit/{contactId}")
+	@PutMapping("/edit/{contactId}")
 	public ContactForm editContact( @PathVariable Integer contactId) {
 		return service.editContact(contactId);
 	}
